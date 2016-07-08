@@ -1,6 +1,7 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 import { ROUTER_DIRECTIVES, Routes } from '@angular/router';
 
+import {FacturaElectronicaComponent} from '../../../pages/factura-electronica/components/factura_electronica';
 import {HomeComponent} from '../../../pages/home/components/home';
 import {ChartComponent} from '../../../pages/charts/components/charts';
 import {GridComponent} from '../../../pages/grid/components/grid';
@@ -22,14 +23,15 @@ import {SidebarComponent} from '../../../shared/sidebar/sidebar';
 })
 
 @Routes([
+    { path: '/factura-electronica', component: FacturaElectronicaComponent },
     { path: '/home', component: HomeComponent },
     { path: '/chart', component: ChartComponent },
     { path: '/table', component: TableComponent },
-	{ path: '/forms', component: FormComponent },
-	{ path: '/element', component: BSElementComponent},
-	{ path: '/grid', component: GridComponent },
-	{ path: '/component', component: NG2Component },
-	{ path: '/blank-page', component: BlankPageComponent }
+    { path: '/forms', component: FormComponent },
+    { path: '/element', component: BSElementComponent},
+    { path: '/grid', component: GridComponent },
+    { path: '/component', component: NG2Component },
+    { path: '/blank-page', component: BlankPageComponent }
 ])
 
 export class DashboardComponent { }
